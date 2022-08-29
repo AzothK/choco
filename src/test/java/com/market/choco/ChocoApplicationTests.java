@@ -1,4 +1,4 @@
-package com.choco;
+package com.market.choco;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
