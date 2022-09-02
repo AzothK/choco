@@ -20,6 +20,6 @@ public class UserService {
         // 이메일인증?
 
         userRepository.save(user);
-        return user.getId();
+        return user.getUserId();
     }
 }
