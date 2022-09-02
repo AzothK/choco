@@ -21,17 +21,30 @@ public class Product {
     @Column(name="product_id")
     private Long id;
 
-    @Column(nullable = false)
-    private Long userId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="user_id",nullable = false)
+    private User user;
 
-    private int cateId;
+    @OneToOne
+    @JoinColumn(name="cate_id")
+    private Cate cateId;
 
     //@OneToOne(mappedBy = )
     private Long file1Id;
+
+    //@OneToOne(mappedBy = )
     private Long file2Id;
+
+    //@OneToOne(mappedBy = )
     private Long file3Id;
+
+    //@OneToOne(mappedBy = )
     private Long file4Id;
+
+    //@OneToOne(mappedBy = )
     private Long file5Id;
+
+    //@OneToOne(mappedBy = )
     private Long file6Id;
 
     @Column(nullable = false)
