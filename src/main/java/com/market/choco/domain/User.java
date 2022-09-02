@@ -1,6 +1,8 @@
 package com.market.choco.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.market.choco.domain.enums.UserEmailAuth;
+import com.market.choco.domain.enums.UserGender;
 import com.market.choco.domain.enums.UserType;
 import lombok.Getter;
 import lombok.Setter;
@@ -22,17 +24,31 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserType userType;
 
+    @Column(length = 63)
     private String userEmail;
+    @Column(length = 63)
     private String userPwd;
+    @Column(length = 10)
     private String userName;
-    private char userEmailAuth;
+
+    @Enumerated(EnumType.STRING)
+    private UserEmailAuth userEmailAuth;
+
     private LocalDateTime userEmailAuthDatetime;
+
+    @Column(length = 15)
     private String userNickName;
+    @Column(length = 11)
     private String userPhone;
 
     @JsonFormat(pattern="yyyy-MM-dd")
+    @Column(length = 10)
     private Date userBirth;
-    private char userGender;
+
+    @Enumerated(EnumType.STRING)
+    private UserGender userGender;
+
+    private float userEvaluation;
 
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
