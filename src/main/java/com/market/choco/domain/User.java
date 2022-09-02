@@ -24,30 +24,31 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserType userType;
 
-    @Column(length = 63)
+    @Column(length = 63,nullable = false,unique = true)
     private String userEmail;
-    @Column(length = 63)
+    @Column(length = 63,nullable = false)
     private String userPwd;
-    @Column(length = 10)
+    @Column(length = 10,nullable = false)
     private String userName;
 
     @Enumerated(EnumType.STRING)
+    @Column(columnDefinition = "N")
     private UserEmailAuth userEmailAuth;
 
     private LocalDateTime userEmailAuthDatetime;
 
-    @Column(length = 15)
+    @Column(length = 15,unique = true)
     private String userNickName;
     @Column(length = 11)
     private String userPhone;
 
     @JsonFormat(pattern="yyyy-MM-dd")
-    @Column(length = 10)
     private Date userBirth;
 
     @Enumerated(EnumType.STRING)
     private UserGender userGender;
 
+    @Column(columnDefinition = "36.5")
     private float userEvaluation;
 
     private LocalDateTime createdAt;
