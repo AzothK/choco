@@ -1,6 +1,7 @@
 package com.market.choco.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.market.choco.domain.enums.UserType;
 import lombok.Getter;
 import lombok.Setter;
 
