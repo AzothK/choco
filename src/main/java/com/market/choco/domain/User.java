@@ -32,7 +32,7 @@ public class User {
     private String userName;
 
     @Enumerated(EnumType.STRING)
-    @Column(columnDefinition = "N")
+    @Column(columnDefinition = "default N")
     private UserEmailAuth userEmailAuth;
 
     private LocalDateTime userEmailAuthDatetime;
@@ -48,7 +48,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     private UserGender userGender;
 
-    @Column(columnDefinition = "36.5")
+    @Column(columnDefinition = "default 36.5")
     private float userEvaluation;
 
     private LocalDateTime createdAt;
