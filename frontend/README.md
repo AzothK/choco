@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# 우동터 프로젝트 - 프론트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프론트 프로젝트만 실행하려는 경우 ( spring 프로젝트 다운 받아져 있는 경우 기준으로 )
+
+`컴퓨터에 NodeJs가 다운받아져 있어야 함.`
+
+1. 프로젝트 위치 기준으로, 최상위 루트에서 터미널(cmd)에 다음과 같은 명령어 입력
+   1. "npm install"
+   2. "npm run start"
 
 ## Available Scripts
 
