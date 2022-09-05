@@ -93,6 +93,7 @@ bin/
 .idea/**/encodings.xml
 .idea/**/sqldialects.xml
 .idea/**/dataSources.xml
+.idea/**/jpa-buddy.xml
 
 # AWS User-specific
 .idea/**/aws.xml
