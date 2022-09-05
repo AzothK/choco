@@ -88,6 +88,12 @@ bin/
 .idea/**/dictionaries
 .idea/**/shelf
 
+# user add ignore
+.idea/**/vcs.xml
+.idea/**/encodings.xml
+.idea/**/sqldialects.xml
+.idea/**/dataSources.xml
+
 # AWS User-specific
 .idea/**/aws.xml
 
@@ -112,8 +118,8 @@ bin/
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
 # .idea/artifacts
-# .idea/compiler.xml
-# .idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml
 # .idea/modules.xml
 # .idea/*.iml
 # .idea/modules
@@ -161,7 +167,7 @@ fabric.properties
 
 # *.iml
 # modules.xml
- .idea/misc.xml
+.idea/misc.xml
 # *.ipr
 
 # Sonarlint plugin
