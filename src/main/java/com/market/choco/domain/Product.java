@@ -29,23 +29,29 @@ public class Product {
     @JoinColumn(name="cate_id")
     private Cate cateId;
 
-    //@OneToOne(mappedBy = )
-    private Long file1Id;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name="file_id")
+    private File file1Id;
 
-    //@OneToOne(mappedBy = )
-    private Long file2Id;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name="file_id")
+    private File file2Id;
 
-    //@OneToOne(mappedBy = )
-    private Long file3Id;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name="file_id")
+    private File file3Id;
 
-    //@OneToOne(mappedBy = )
-    private Long file4Id;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name="file_id")
+    private File file4Id;
 
-    //@OneToOne(mappedBy = )
-    private Long file5Id;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name="file_id")
+    private File file5Id;
 
-    //@OneToOne(mappedBy = )
-    private Long file6Id;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name="file_id")
+    private File file6Id;
 
     @Column(nullable = false)
     private String productTitle;

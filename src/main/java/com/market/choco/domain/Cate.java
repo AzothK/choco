@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Setter
@@ -15,13 +16,14 @@ public class Cate {
     @Column(name="cate_id")
     private Long cateId;
 
-    //private Long
+    @OneToOne(fetch = FetchType.LAZY)
+    private Cate parentCateId;
 
+    private int cateDepth;
 
-    //cate_id	bigint	Autoincrease 1000
-    //parent_cate_id	bigint	Autoincrease 1000
-    //cate_depth	int(1)	1
-    //cate_name	varchar(32)	not null, unique
-    //created_at	datetime	now()
-    //updated_at	datetime	0000-00-00 00:00:00
+    @Column(length = 32)
+    private String cateName;
+
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }
